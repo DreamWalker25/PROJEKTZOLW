@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none;}
+
+
+.navbar{
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    font-size: 30px;
+    background-color: white;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+-moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+    padding: 4px;
+    position: relative;
+    display: block;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;  
+    transition:color 1s;
+    font-weight: bolder;
+    font-size:xx-large
+}
+.menu ul li a:hover{
+    color: aqua;
+
+}
+
+
+.cart{
+    position: relative;
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+    align-self: center;
+    height: 50px;
+}
+.logo{
+    width: 180px;
+}
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(5, 223px);
+    gap: 30px;
+    justify-content: center;
+    margin: 0px;
+}
+.product{
+    background-color: whitesmoke;
+}
+.description{
+    letter-spacing: 1px;
+}
+@media (max-width: 1400px){
+    .shop{
+        grid-template-columns: repeat(3, 220px);
+    }
+}
+
+@media (max-width: 800px){
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width: 500px){
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+.background-image {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-top: 0;
+
+}
+#video{
+    width: 80%;
+    height: auto;    
+    border-radius: 6px;
+
+}
+.image-description {
+    position: absolute;
+    display: block;
+    color: #f1f1f1;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+.productcard{
+    display: flex;
+    gap: 250px;
+    
+}
+.productimage{
+    width: 450px;
+    height: 450px;
+    background-color: whitesmoke;
+}
+.container{
+    margin-left: 280px;
+    margin-right: 280px;
+    margin-top: 70px;
+}
+.productdescription > p{
+    width: 550px;
+    letter-spacing: 1px;
+}
+button{
+    width: 300px;
+    background-color: green;
+    border: 0;
+    color: white;
+    height: 50px;
+    border-radius: 30px;
+}
