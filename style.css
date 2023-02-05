@@ -69,7 +69,7 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     grid-template-columns: repeat(5, 223px);
     gap: 30px;
     justify-content: center;
-    margin: 0px;
+    margin: 30px;
 }
 .product{
     background-color: whitesmoke;
