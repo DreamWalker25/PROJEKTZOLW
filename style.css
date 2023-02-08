@@ -138,10 +138,13 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     letter-spacing: 1px;
 }
 button{
-    width: 300px;
+    width: 200px;
     background-color: green;
     border: 0;
     color: white;
-    height: 50px;
-    border-radius: 30px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: left;
+    padding: 5px;
+
 }
