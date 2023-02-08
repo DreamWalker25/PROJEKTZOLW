@@ -145,3 +145,17 @@ button{
     height: 50px;
     border-radius: 30px;
 }
+
+footer {
+    background-color: darkseagreen;
+    text-align: center;
+    
+}
+
+.main2 h2 {
+    text-align: center;
+}
+
+.main2 p {
+    font-size: 20px;
+}
