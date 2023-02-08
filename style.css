@@ -162,3 +162,11 @@ footer {
 .main2 p {
     font-size: 20px;
 }
+
+.regulamin h2 {
+    text-align: center;
+}
+
+.regulamin p{
+    font-style: italic;
+}
