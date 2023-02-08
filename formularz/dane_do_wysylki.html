@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Dostawa</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dane_do_wysylki.css">
+</head>
+<body>
+        
+    <section class="container">
+        
+        <form action="dane_do_wysylki.php" method="post">
+            <nav>
+                <h3>Informacje podstawowe</h3>
+                <fieldset>
+                    <legend>Imię i nazwisko</legend><input type="text" name="imieNazwisko" id="imieNazwisko" size="max" placeholder="Jan Kowalski" pattern="\w{3,16}\s\w{3,16}" value="Jan Kowalski"required>
+                </fieldset>
+                <fieldset>
+                    <legend>Adres email</legend><input type="email" name="adresEmail" id="adresEmail" placeholder="jankowalski@gmail.com" value="jankowalski@gmail.com" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Numer telefonu</legend><input type="tel" name="numerTelefonu" id="numerTelefonu" placeholder="601102203" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" value="601102203" required>
+                </fieldset>
+            </nav>
+            <nav>
+                <h3 style="margin-top: 4%;">Dane do wysyłki</h3>
+                <fieldset style="float: left; width: 40%;">
+                    <legend>Kod pocztowy</legend><input type="text" name="kodPocztowy" id="kodPocztowy" placeholder="41-260" pattern="[0-9]{2}-[0-9]{3}" value="41-260" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Miasto</legend><input type="text" name="miasto" id="miasto" placeholder="Sławków" value="Sławków" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Ulica</legend><input type="text" name="ulica" id="ulica" placeholder="Browarna" value="Browarna" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Numer domu/mieszkania</legend><input type="text" name="numerDomuMieszkania" id="numerDomuMieszkania" placeholder="34/5" value="34/5" required>
+                </fieldset>
+            </nav>
+            <nav id="guzik">
+                <input type="submit" value="Przejdź do płatności ▶" name="guzik" id="guzik">
+            </nav>
+        </form> 
+    </section>
+    <div class="sliding-background"></div>
+</body>
+</html>
