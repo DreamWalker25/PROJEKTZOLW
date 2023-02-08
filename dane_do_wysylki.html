@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Dostawa</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dane_do_wysylki.css">
+</head>
+<body>
+    <section>
+        <form action="post">
+            <nav>
+                <h3>Informacje podstawowe</h3>
+                <fieldset>
+                    <legend>Imię i nazwisko</legend><input type="text" name="imieNazwisko" id="imieNazwisko" size="max">
+                </fieldset>
+                <fieldset>
+                    <legend>Adres email</legend><input type="text" name="adresEmail" id="adresEmail">
+                </fieldset>
+                <fieldset>
+                    <legend>Numer telefonu</legend><input type="text" name="numerTelefonu" id="numerTelefonu">
+                </fieldset>
+            </nav>
+            <nav>
+                <h3 style="margin-top: 4%;">Dane do wysyłki</h3>
+                <fieldset style="float: left;">
+                    <legend>Kod pocztowy</legend><input type="text" name="kodPocztowy" id="kodPocztowy">
+                </fieldset>
+                <fieldset>
+                    <legend>Miasto</legend><input type="text" name="miasto" id="miasto">
+                </fieldset>
+                <fieldset>
+                    <legend>Ulica</legend><input type="text" name="ulica" id="ulica">
+                </fieldset>
+                <fieldset>
+                    <legend>Numer domu/mieszkania</legend><input type="text" name="numerDomuMieszkania" id="numerDomuMieszkania">
+                </fieldset>
+            </nav>
+            <nav id="guzik">
+                <input type="submit" value="Przejdź do płatności ▶" name="guzik" id="guzik">
+            </nav>
+        </form>  
+    </section>
+</body>
+</html>

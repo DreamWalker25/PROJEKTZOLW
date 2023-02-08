@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+form {
+    width: 30%;
+    height: auto;
+    border: 2px solid #BFBFBF;
+    padding: 2%;
+    font-size: 140%;
+    border-radius: 5%;
+}
+
+fieldset {
+    padding: 2%;
+    border-radius: 5px;  
+    color: #404040;
+    border: 2px solid;
+}
+
+nav input {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    border-bottom: 2px solid #BFBFBF;
+    line-height: 100%;
+    width: 100%;
+    font-size: 100%;        
+}
+
+
+nav input:focus:valid {
+    outline: 0;
+    border-bottom-color: #404040;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #808080;
+    border-radius: 5px;
+    width: 60%;
+    height: 10%;
+    padding: 2%;
+    border: 0;
+    line-height: 100%;
+    font-size: 100%;
+    margin-top: 2%;
+    white-space: normal;
+}
+
+nav#guzik {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #404040;
+}
+
+@media (max-width: 1100px){
+    form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px){
+    form {
+        width: 80%;
+    }
+}

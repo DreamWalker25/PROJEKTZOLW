@@ -135,6 +135,7 @@ let shop = document.getElementById('shop')
             <div class="description">
                 <p>${name}</p>
                 <h3>${price} PLN</h3>
+                <button>Dodaj do koszyka</button>
             </div>
         </div>
         `
