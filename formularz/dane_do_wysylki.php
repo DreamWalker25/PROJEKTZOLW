@@ -57,11 +57,22 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <div class="delivery_message">
+    <!-- <div class="delivery_message">
         <p>Dziękujemy za korzystanie z naszych usług!</p><br>
         <p>Twoje dane zostały przesłane do naszego systemu, możesz powrócić do strony głównej</p><br>
         <a href="../index.html"><b>Powrót na stronę główną</b></a>
         <img src="oktutel.png">
-    </div>
+    </div> -->
+    <section class="container">
+        <form action="../index.html">
+            <h3>Dziękujemy za korzystanie z naszych usług!</h3><br>
+            <p>Twoje dane zostały przesłane do naszego systemu, możesz powrócić do strony głównej</p><br>
+            <img src="oktutel.png">
+            <nav id="guzik">
+                <input type="submit" value="Przejdź do strony głownej" name="guzik" id="guzik">
+            </nav>
+        </form> 
+    </section>
+    <div class="sliding-background"></div>
 </body>
 </html>
