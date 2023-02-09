@@ -1,4 +1,3 @@
- let shop = document.getElementById('shop')
  let products=[ 
     {
         name: "Zółw czarownica",
@@ -164,25 +163,6 @@
     },
  ];
 
- let generateShop = () => {
-    return (shop.innerHTML = products
-        .map((x) => {
-            let {name, img, price, link,id} = x
-            return `<div class="item">
-            <a href=${link}>
-            <img class="product" width="215" src=${img} alt="rzuf">
-            </a>
-            <div class="description">
-                <p>${name}</p>
-                <h3>${price} PLN</h3>
-                <button class="add-cart cart${id}">Dodaj do koszyka</button>
-            </div>
-        </div>
-        `
-        }).join(""));
- };
- generateShop();
-
 
  //Generowanie produktów /\         dodawanie do koszyka etc. ||
  //                      ||                                   \/
@@ -194,6 +174,7 @@ let carts = document.querySelectorAll('.add-cart');
 for (let i=0; i<carts.length;i++){
     carts[i].addEventListener('click', ()=>{
         cartNumbers(products[i]);
+         totalCost(products[i]);
     })
 }
 
@@ -248,4 +229,30 @@ function setItems(product){
     localStorage.setItem("productsInCart", JSON.stringify(cartItems)); 
 }
 
+function totalCost(product){
+    // console.log("cena = ", product.price);
+    let cartCost = localStorage.getItem('totalCost');
+
+
+    console.log("Wartość koszyka = ", cartCost);
+    console.log(typeof cartCost);
+      
+    if(cartCost != null){
+        cartCost = parseInt(cartCost);
+        localStorage.setItem('totalCost', cartCost + product.price);
+    }else{
+        localStorage.setItem('totalCost', product.price);
+
+    }
+
+}
+
+function displayCart(){
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+
+    console.log(cartItems);
+}
+
 onLoadCartNumbers();
+displayCart();

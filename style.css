@@ -281,3 +281,46 @@ letter-spacing: 1px;
     border-radius: 10px;
     padding: 20px;
 }
+
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+.products-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgreen;
+    margin: 0 auto;
+}
+.products-title{
+    width: 45%;
+}
+.price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.quantity{
+    width: 36%;
+    display: flex;
+    align-items: center ;
+}
+.total{
+    width: 12%;
+     display: flex;
+    align-items: center;
+}
+.products{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgreen;
+}
