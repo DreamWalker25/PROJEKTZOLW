@@ -436,3 +436,17 @@ button::before{
 button:hover::before{
     transform: scaleX(1);
 }
+
+#deleter a:hover{
+    color: #3c4c14;
+    background-color: #a1b151;
+    transition: 0.3s ease;
+}
+#deleter a::before{
+    content: "";
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+#deleter a:hover::before{
+    transform: scaleX(1);
+}
