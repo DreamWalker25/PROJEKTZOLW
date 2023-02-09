@@ -224,12 +224,27 @@ function cartNumbers(product){
 }
 
 function setItems(product){
-    console.log('W setitems '); 
-    console.log("mój produkt to ",product); 
-    let cartItems = {
-        [product.img]: product
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+     
+    if(cartItems != null){
+            if(cartItems[product.tag] == undefined){
+                cartItems = {
+                    ...cartItems,
+                    [product.tag]: product
+                }
+            }
+
+        cartItems[product.tag].inCart += 1;
+    }else{
+        product.inCart = 1;
+        cartItems = {
+            [product.tag]: product
+         }
     }
-    product.inCart = 1;
+
+    
+  
     localStorage.setItem("productsInCart", JSON.stringify(cartItems)); 
 }
 

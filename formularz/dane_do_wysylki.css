@@ -112,3 +112,15 @@ input[type="submit"]:hover {
         width: 80%;
     }
 }
+
+.delivery_message{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    background-color: #5e6637;
+
+}
+.delivery_message img{
+    width: 450px;
+    height: auto;
+}
