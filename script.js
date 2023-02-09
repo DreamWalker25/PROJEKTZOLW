@@ -164,10 +164,6 @@
  ];
 
 
- //Generowanie produktów /\         dodawanie do koszyka etc. ||
- //                      ||                                   \/
-
-
 let carts = document.querySelectorAll('.add-cart');
 
 
@@ -250,9 +246,45 @@ function totalCost(product){
 function displayCart(){
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector(".products");
+    let cartCost = localStorage.getItem('totalCost');
 
-    console.log(cartItems);
+    if(cartItems && productContainer){
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+            productContainer.innerHTML += `
+        <div class="product">
+                <img src="${item.img}">
+                <span>${item.name}</span>
+           
+            <div class="price">${item.price} Zł</div>
+            <div class=quantity>
+               <span>${item.inCart}</span>
+            </div> 
+            <div class="total">
+                ${item.inCart* item.price} Zł;
+            </div>
+        </div> 
+            `
+        });
+
+        productContainer.innerHTML += `
+            <div class="basketTotalContainer">
+                <h4 class="basketTotalTitle">
+                Koszyk razem    
+                </h4>
+                    
+                <h4 class="basketTotal">
+                ${cartCost} Zł
+                </h4>
+        `
+    }
 }
+
+function deleteCart(){
+    localStorage.clear();
+}
+
 
 onLoadCartNumbers();
 displayCart();
